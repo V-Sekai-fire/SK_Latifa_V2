@@ -1,0 +1,288 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Control",
+"class": &"BlendedColorRect",
+"language": &"GDScript",
+"path": "res://addons/canvas_extension/blended_color_rect.gd"
+}, {
+"base": "Control",
+"class": &"BlendedColorRibbon",
+"language": &"GDScript",
+"path": "res://addons/canvas_extension/blended_color_ribbon.gd"
+}, {
+"base": "Control",
+"class": &"BlendedTextureRect",
+"language": &"GDScript",
+"path": "res://addons/canvas_extension/blended_texture_rect.gd"
+}, {
+"base": "Node3D",
+"class": &"Canvas3D",
+"language": &"GDScript",
+"path": "res://addons/canvas_plane/canvas_3d.gd"
+}, {
+"base": "Node3D",
+"class": &"Canvas3DAnchor",
+"language": &"GDScript",
+"path": "res://addons/canvas_plane/canvas_3d_anchor.gd"
+}, {
+"base": "Node3D",
+"class": &"CanvasPlane",
+"language": &"GDScript",
+"path": "res://addons/canvas_plane/canvas_plane.gd"
+}, {
+"base": "Node",
+"class": &"ComponentNode",
+"language": &"GDScript",
+"path": "res://addons/entity_manager/component_node.gd"
+}, {
+"base": "Node",
+"class": &"Entity",
+"language": &"GDScript",
+"path": "res://addons/entity_manager/entity.gd"
+}, {
+"base": "Node",
+"class": &"EntityManagerFunctions",
+"language": &"GDScript",
+"path": "res://addons/entity_manager/entity_manager_functions.gd"
+}, {
+"base": "RefCounted",
+"class": &"EntityRef",
+"language": &"GDScript",
+"path": "res://addons/entity_manager/entity_ref.gd"
+}, {
+"base": "Control",
+"class": &"GridRect",
+"language": &"GDScript",
+"path": "res://addons/canvas_extension/grid_rect.gd"
+}, {
+"base": "Resource",
+"class": &"HumanoidData",
+"language": &"GDScript",
+"path": "res://addons/vsk_avatar/humanoid_data.gd"
+}, {
+"base": "EditorImportPlugin",
+"class": &"MCPImporter",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mcp_importer.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapConstants",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_constants.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapFunctions",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_functions.gd"
+}, {
+"base": "Node",
+"class": &"MocapManager",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_manager.gd"
+}, {
+"base": "EditorPlugin",
+"class": &"MocapManagerPlugin",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_manager_plugin.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapRecording",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_recording.gd"
+}, {
+"base": "NetworkLogic",
+"class": &"NetworkHierarchy",
+"language": &"GDScript",
+"path": "res://addons/network_manager/network_hierarchy.gd"
+}, {
+"base": "Node",
+"class": &"NetworkIdentity",
+"language": &"GDScript",
+"path": "res://addons/network_manager/network_identity.gd"
+}, {
+"base": "Node",
+"class": &"NetworkLogic",
+"language": &"GDScript",
+"path": "res://addons/network_manager/network_logic.gd"
+}, {
+"base": "NetworkLogic",
+"class": &"NetworkPhysics",
+"language": &"GDScript",
+"path": "res://addons/network_manager/network_physics.gd"
+}, {
+"base": "Node",
+"class": &"NetworkRPCTable",
+"language": &"GDScript",
+"path": "res://addons/network_manager/network_rpc_table.gd"
+}, {
+"base": "Position3D",
+"class": &"NetworkSpawn",
+"language": &"GDScript",
+"path": "res://addons/network_manager/network_spawn.gd"
+}, {
+"base": "NetworkLogic",
+"class": &"NetworkTransform",
+"language": &"GDScript",
+"path": "res://addons/network_manager/network_transform.gd"
+}, {
+"base": "Node",
+"class": &"RuntimeEntity",
+"language": &"GDScript",
+"path": "res://addons/entity_manager/runtime_entity.gd"
+}, {
+"base": "Node",
+"class": &"SimulationLogic",
+"language": &"GDScript",
+"path": "res://addons/entity_manager/simulation_logic.gd"
+}, {
+"base": "RefCounted",
+"class": &"StrongExclusiveEntityDependencyHandle",
+"language": &"GDScript",
+"path": "res://addons/entity_manager/strong_exclusive_entity_dependency_handle.gd"
+}, {
+"base": "Node3D",
+"class": &"VRMTopLevel",
+"language": &"GDScript",
+"path": "res://addons/vrm/vrm_toplevel.gd"
+}, {
+"base": "Resource",
+"class": &"VSKMapEntityInstanceRecord",
+"language": &"GDScript",
+"path": "res://addons/vsk_map/vsk_map_entity_instance_record.gd"
+}]
+_global_script_class_icons={
+"BlendedColorRect": "",
+"BlendedColorRibbon": "",
+"BlendedTextureRect": "",
+"Canvas3D": "res://addons/canvas_plane/icon_canvas_3d.svg",
+"Canvas3DAnchor": "",
+"CanvasPlane": "res://addons/canvas_plane/icon_canvas_3d.svg",
+"ComponentNode": "",
+"Entity": "",
+"EntityManagerFunctions": "",
+"EntityRef": "",
+"GridRect": "",
+"HumanoidData": "",
+"MCPImporter": "",
+"MocapConstants": "",
+"MocapFunctions": "",
+"MocapManager": "",
+"MocapManagerPlugin": "",
+"MocapRecording": "",
+"NetworkHierarchy": "",
+"NetworkIdentity": "",
+"NetworkLogic": "",
+"NetworkPhysics": "",
+"NetworkRPCTable": "",
+"NetworkSpawn": "",
+"NetworkTransform": "",
+"RuntimeEntity": "",
+"SimulationLogic": "",
+"StrongExclusiveEntityDependencyHandle": "",
+"VRMTopLevel": "",
+"VSKMapEntityInstanceRecord": ""
+}
+
+[application]
+
+config/name="VSK_template"
+config/features=PackedStringArray("4.0")
+
+[assets]
+
+config/avatar_forbidden_path="res://addons/vsk_avatar/avatars/error_handlers/avatar_forbidden.tscn"
+config/avatar_not_found_path="res://addons/vsk_avatar/avatars/error_handlers/avatar_not_found.tscn"
+config/avatar_error_path="res://addons/vsk_avatar/avatars/error_handlers/avatar_error.tscn"
+config/teapot_path="res://addons/vsk_avatar/avatars/error_handlers/teapot.tscn"
+config/loading_avatar_path="res://addons/vsk_avatar/avatars/loading/loading_orb.tscn"
+config/avatar_whitelist=PackedStringArray()
+config/prop_whitelist=PackedStringArray()
+config/map_whitelist=PackedStringArray()
+config/game_mode_whitelist=PackedStringArray()
+
+[autoload]
+
+EntityManager="*res://addons/entity_manager/entity_manager.gd"
+ConnectionUtil="*res://addons/gd_util/connection_util.gd"
+GodotMathExtension="*res://addons/math_util/math_funcs.gd"
+NetworkManager="*res://addons/network_manager/network_manager.gd"
+NetworkLogger="*res://addons/network_manager/network_logger.gd"
+LogManager="*res://addons/sar1_log_manager/log_manager.gd"
+VSKExporter="*res://addons/vsk_importer_exporter/vsk_exporter.gd"
+VSKImporter="*res://addons/vsk_importer_exporter/vsk_importer.gd"
+InputManager="*res://addons/input_manager/input_manager.gd"
+PerformanceMonitor="*res://addons/performance_monitor/performance_monitor.gd"
+Console="*res://addons/sar1_console_manager/console.tscn"
+ConsoleManager="*res://addons/sar1_console_manager/console_manager.gd"
+DebugManager="*res://addons/sar1_debug_manager/debug_manager.gd"
+GraphicsManager="*res://addons/sar1_graphics_manager/graphics_manager.gd"
+SnappingSingleton="*res://addons/sar1_vr_manager/components/lasso_snapping/snapping_singleton.gd"
+VRManager="*res://addons/sar1_vr_manager/vr_manager.gd"
+VSKEditor="*res://addons/vsk_editor/vsk_editor.gd"
+GodotUroData="*res://addons/godot_uro/godot_uro_data.gd"
+GodotUro="*res://addons/godot_uro/godot_uro.gd"
+ScreenshotManager="*res://addons/sar1_screenshot_manager/screenshot_manager.gd"
+VSKAccountManager="*res://addons/vsk_manager/vsk_account_manager.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/entity_manager/plugin.cfg", "res://addons/gd_util/plugin.cfg", "res://addons/math_util/plugin.cfg", "res://addons/network_manager/plugin.cfg", "res://addons/sar1_log_manager/plugin.cfg", "res://addons/vrm/plugin.cfg", "res://addons/vsk_avatar/plugin.cfg", "res://addons/vsk_importer_exporter/plugin.cfg", "res://addons/vsk_map/plugin.cfg", "res://addons/vsk_vrm_avatar_tool/plugin.cfg", "res://addons/input_manager/plugin.cfg", "res://addons/line_renderer/plugin.cfg", "res://addons/performance_monitor/plugin.cfg", "res://addons/sar1_console_manager/plugin.cfg", "res://addons/sar1_debug_manager/plugin.cfg", "res://addons/sar1_graphics_manager/plugin.cfg", "res://addons/sar1_mocap_manager/plugin.cfg", "res://addons/sar1_vr_manager/plugin.cfg", "res://addons/vsk_editor/plugin.cfg", "res://addons/vsk_entities/plugin.cfg", "res://addons/canvas_extension/plugin.cfg", "res://addons/canvas_plane/plugin.cfg", "res://addons/correct_bone_direction/plugin.cfg", "res://addons/emote_theme/plugin.cfg", "res://addons/extended_kinematic_body/plugin.cfg", "res://addons/godot_uro/plugin.cfg", "res://addons/sar1_screenshot_manager/plugin.cfg", "res://addons/vsk_version/plugin.cfg", "res://addons/textureRectUrl/plugin.cfg")
+
+[entities]
+
+config/process_priority=0
+
+[filesystem]
+
+import/fbx/use_fbx=false
+import/blend/blender_path=""
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 2,
+"compress/mode": 2
+}
+
+[network]
+
+config/networked_scenes=PackedStringArray()
+config/max_networked_entities=4096
+config/network_fps=60
+config/entity_root_node=NodePath("")
+config/compression_mode=0
+config/default_port=7777
+
+[rendering]
+
+driver/threads/thread_model=2
+textures/vram_compression/import_bptc=true
+scaling_3d/mode=1
+scaling_3d/scale=0.59
+scaling_3d/fsr_sharpness=0.4
+anti_aliasing/quality/msaa=1
+occlusion_culling/use_occlusion_culling=true
+quality/shadows/filter_mode=2
+
+[services]
+
+uro/use_localhost=false
+uro/host="https://uro.v-sekai.cloud"
+uro/port=443
+uro/use_ssl=true
+services/services=PackedStringArray("res://addons/vsk_manager/services/uro_service.gd")
+services/required_host_notify_services=PackedStringArray("res://addons/vsk_manager/services/uro_service.gd")
+
+[vr]
+
+config/interfaces=PackedStringArray()
+config/process_priority=0
